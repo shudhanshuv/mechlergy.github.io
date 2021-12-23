@@ -10,7 +10,7 @@ function closeNav() {
 
 // // Countdown
 
-var countDownDate = new Date("Dec 25, 2021 15:37:25").getTime();
+var countDownDate = new Date("jan 31, 2022 15:37:25").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
