@@ -1245,17 +1245,17 @@ body{
 
 .card:nth-child(3):hover .img-container{background-color: #343a5a;}
 
-.card:nth-child(4):hover .img-container{background-color: #121f49;}
 
-.card:nth-child(5):hover .img-container{background-color: #f3eaef;}
 
-.card:nth-child(6):hover .img-container{background-color: #cfced3;}
+.card:nth-child(4):hover .img-container{background-color: #f3eaef;}
 
-.card:nth-child(7):hover .img-container{background-color: #e1e1e1;}
+.card:nth-child(5):hover .img-container{background-color: #cfced3;}
 
-.card:nth-child(8):hover .img-container{background-color: #6e7988;}
+.card:nth-child(6):hover .img-container{background-color: #e1e1e1;}
 
-.card:nth-child(9):hover .img-container{background-color: #fc4d5c;}
+.card:nth-child(7):hover .img-container{background-color: #6e7988;}
+
+.card:nth-child(8):hover .img-container{background-color: #fc4d5c;}
 
 .card:hover .circle-1, .card:hover .circle-2{
     transform: rotate(360deg);
