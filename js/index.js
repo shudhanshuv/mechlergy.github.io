@@ -32,6 +32,7 @@ var x = setInterval(function() {
         document.getElementById("clock").innerHTML = "EXPIRED";
     }
 }, 1000);
+<<<<<<< HEAD
 
 // function popup(mylink, windowname)
 // {
@@ -87,3 +88,5 @@ var x = setInterval(function() {
 // 		this.classList.toggle('is-on');
 // 	})
 // }
+=======
+>>>>>>> 95ee45e77d639f20b05026727cd6e80ecf4db59c
