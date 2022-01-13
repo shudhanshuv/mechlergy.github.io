@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --primary-color:#FDEF0A;
+    --text-color:#f7f7f7;
+    --secondary-color:#26282B;
+    --content-text: font-family: 'Cairo', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   overflow-x: hidden;
+
+}
+
+.career-container{
+    width: 100%;
+    height: auto;
+    padding: 4em 0;
+    background-color: var(--text-color);
+    font-family: 'Cairo', sans-serif;
+}
+
+.career-container .career-container-header{
+    text-align: left;
+    padding: 4em 0;
+    display: flex;
+    margin-bottom: 4em;
+}
+
+.career-container-heading{
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 0.5em;
+    color:var(--secondary-color);
+}
+
+.career-container-sub-heading{
+    width: auto;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #888e99;
+    margin: 2em 0;
+}
+
+.career-container-header button, .career-container-sub-header button{
+    border: none;
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.career-container-header button:hover, .career-container-sub-header button:hover{
+    letter-spacing: 2px;
+}
+
+.career-container-sub-header{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 8em;
+    display: flex;
+}
+
+.apply-btn{
+    padding: 0.5em 1.5em;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #242424d5;
+    margin-top: 3em;
+}
+
+.apply-btn:hover{
+    box-shadow: 4px 16px 40px #e0de42;
+}
+
+.animate-icon lord-icon{
+    width:250px;
+    height:250px;
+}
+
+.career-container-apply{
+    width: auto;
+    margin-top: 4em;
+    padding: 3em 0;
+    text-align: center;
+    background-color: #888e9942;
+}
+
+.career-container-apply h1{
+    margin: 0;
+    font-size: 40px;
+}
+
+.career-container-apply p{
+    margin: 0.5em 0 0 0;
+}
+
+/* for less then 1200px screen */
+@media screen and (max-width: 1200px) {
+    .career-container .career-container-header{
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .career-container-heading{font-size: 70px;}
+    
+    .career-container-sub-heading{
+        font-size: 38px;
+        padding: 0 3em;
+    }
+
+    .animate-icon lord-icon{display: none;}
+    
+    .career-container-header button, .career-container-sub-header button{
+        font-size: 32px;
+    }
+    
+    .career-container-sub-header{
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .apply-btn{font-size: 28px;}
+    
+    .career-container-apply h1{font-size: 50px;}
+    
+    .career-container-apply p{font-size: 28px;}
+}
+
+/* for less then 992px screen */
+@media screen and (max-width: 992px) {
+    .career-container-heading{font-size: 60px;}
+    
+    .career-container-sub-heading{font-size: 32px;}
+
+    .career-container-header button, .career-container-sub-header button{font-size: 26px;}
+
+    .apply-btn{font-size: 26px;}
+    
+    .career-container-apply h1{font-size: 48px;}
+}
+
+/* for less then 600px screen */
+@media only screen and (max-width: 600px){
+    .career-container-heading{font-size: 50px;}
+    
+    .career-container-sub-heading{
+        font-size: 24px;
+        padding: 0 2em;
+    }
+
+    .career-container-header button, .career-container-sub-header button{
+        font-size: 20px;
+    }
+    
+    .apply-btn{font-size: 22px;}
+    
+    .career-container-apply h1{font-size: 36px;}
+    
+    .career-container-apply p{font-size: 20px;}
+}
+
+/* for less then 400px screen */
+@media only screen and (max-width: 400px){
+    .career-container-heading{font-size: 44px;}
+    
+    .career-container-sub-heading{font-size: 20px;}
+
+    .career-container-header button, .career-container-sub-header button{font-size: 18px;}
+    
+    .apply-btn{font-size: 20px;}
+    
+    .career-container-apply h1{font-size: 32px;}
+    
+    .career-container-apply p{font-size: 18px;}
+}
+
+@media only screen and (max-width: 300px){
+    .career-container-heading{font-size: 36px;}
+    
+    .career-container-sub-heading{font-size: 16px;}
+
+    .career-container-header button, .career-container-sub-header button{font-size: 14px;}
+    
+    .apply-btn{font-size: 18px;}
+    
+    .career-container-apply h1{font-size: 26px;}
+    
+    .career-container-apply p{font-size: 14px;}
+} 

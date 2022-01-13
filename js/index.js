@@ -10,7 +10,7 @@ function closeNav() {
 
 // // Countdown
 
-var countDownDate = new Date("Dec 25, 2021 15:37:25").getTime();
+var countDownDate = new Date("jan 31, 2022 15:37:25").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -32,3 +32,58 @@ var x = setInterval(function() {
         document.getElementById("clock").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+// function popup(mylink, windowname)
+// {
+//   if (! window.focus)
+//     return true;
+//   var href;
+//   if (typeof(mylink) == 'string')
+//     href=mylink;
+//   else 
+//     href=mylink.href;
+//   window.open(href, windowname, 'scrollbars=yes');
+//   return false;
+// }
+
+// let buttons  = $('button'); 
+// let isopned = true;
+
+// $('#button-toggle').click(()=>{
+//     if(isopned)
+//     {
+//         $('#down-menu').css('animation','scalereverse .3s 1');
+//         setTimeout(()=>{
+//             $('#down-menu').css('display','none');
+//         },100)
+//         isopned =false;
+
+//         $("#btnicon .fa-chevron-down").toggleClass("rtoate180");
+
+//         let toggle = $('.toggle');
+
+//         for(var i = 0; toggle.length>i; i++) {
+//             toggle[i].classList.remove('is-on');
+//         }
+
+//     }
+//     else{
+//         $('#down-menu').css({'display':'block','animation': 'scale .3s 1'});
+//         for(var i=0; i<buttons.length; i+=1)
+//         {
+//             buttons[i].style.animation='op .8s 1';
+//         }
+//         isopned =true;
+
+//         $("#btnicon .fa-chevron-down").toggleClass("rtoate180");
+//     }
+// });
+
+
+// const toggle = $('.toggle');
+
+// for(var i = 0; toggle.length>i; i++) {
+// 	toggle[i].addEventListener('click', function() {
+// 		this.classList.toggle('is-on');
+// 	})
+// }
