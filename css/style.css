@@ -900,7 +900,7 @@ body{
 }
 
 @media screen and (max-width: 1200px){
-    .about-page-heading{font-size: 8em;}
+    .about-page-heading{font-size: 6em;}
 
     .company-container .company-logo img{width: 600px;}
 
@@ -918,7 +918,7 @@ body{
 
 /* for less then 992px screen */
 @media screen and (max-width: 992px) {
-    .about-page-heading{font-size: 6em;}
+    .about-page-heading{font-size: 4em;}
 
     .company-container .company-logo img{width: 600px;}
 
@@ -932,7 +932,7 @@ body{
 
 /* for less then 600px screen */
 @media screen and (max-width: 600px){
-    .about-page-heading{font-size: 4em;}
+    .about-page-heading{font-size: 2.5em;}
 
     .company-container .company-logo img{width: 300px;}
 
@@ -946,7 +946,7 @@ body{
 
 /* for less then 400px screen */
 @media screen and (max-width: 400px){
-    .about-page-heading{font-size: 3em;}
+    .about-page-heading{font-size: 2em;}
 
     .company-container .company-logo img{width: 250px;}
 
@@ -960,7 +960,7 @@ body{
 
 /* for less then 374px screen */
 @media screen and (max-width: 374px){
-    .about-page-heading{font-size: 2.5em;}
+    .about-page-heading{font-size: 1.5em;}
 
     .company-container .company-logo img{width: 220px;}
 
@@ -1341,13 +1341,11 @@ body{
     
     .card:nth-child(2) .img-container{background-color: #454140;}
     
-<<<<<<< HEAD
     .card:nth-child(3) .img-container{background-color: #343a5a;}
     
     /* .card:nth-child(4) .img-container{background-color: #121f49;} */
-=======
-    .card:nth-child(3) .img-container{background-color: #343a5a;
->>>>>>> 95ee45e77d639f20b05026727cd6e80ecf4db59c
+   
+
     
     .card:nth-child(4) .img-container{background-color: #f3eaef;}
     
@@ -1484,7 +1482,4 @@ body{
     
     .info .member-role{font-size: 10px;}
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 95ee45e77d639f20b05026727cd6e80ecf4db59c
