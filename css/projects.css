@@ -161,7 +161,7 @@ body{
   line-height: 2;
 }
 
-
+/* for less then 1280px screen */
 @media screen and (max-width: 1280px){
   .project-heading p{font-size: 20px;}
 
@@ -189,7 +189,7 @@ body{
   .project-container .project-card1:hover p{margin-top: 0;}
 }
 
-/* for less then 1200px screen */
+/* for less then 1120px screen */
 @media screen and (max-width: 1120px) {
   .project-heading h1{font-size: 55px;}
   
@@ -221,7 +221,7 @@ body{
   }
 }
 
-/* for less then 910px screen */
+/* for less then 995px screen */
 @media screen and (max-width: 995px){
   .project-container .project-card1 {
     height: 600px;
@@ -268,7 +268,7 @@ body{
   .project-container .project-card1 .project-container-head h3{font-size: 27px}
 }
 
-/* for less then 400px screen */
+/* for less then 775px screen */
 @media screen and (max-width: 775px){
   .project-container .project-card1 {
     height: 600px;
@@ -285,7 +285,7 @@ body{
   .project-container .project-card1 .project-container-head h3{font-size: 22px}
 }
 
-/* for less then 400px screen */
+/* for less then 575px screen */
 @media screen and (max-width: 575px){
   .project-container .project-card1 {
     height: 620px;
@@ -297,7 +297,7 @@ body{
   .project-container .project-card1 .project-container-head h3{font-size: 20px}
 }
 
-/* for less then 400px screen */
+/* for less then 550px screen */
 @media screen and (max-width: 550px){
   .project-container .project-card1 {
     height: 600px;
@@ -311,7 +311,7 @@ body{
   .project-container .project-card1 .project-container-head h3{font-size: 17px}
 }
 
-/* for less then 400px screen */
+/* for less then 511px screen */
 @media screen and (max-width: 511px){
   .project-heading h1{font-size: 34px;}
   
@@ -326,6 +326,7 @@ body{
   .project-container .project-card1 .project-container-head h3{font-size: 18px}
 }
 
+/* for less then 490px screen */
 @media only screen and (max-width: 490px){
   .project-heading h1{font-size: 32px;}
   
@@ -333,25 +334,26 @@ body{
 
   .project-container .project-card1 p{font-size: 13px;}
 
-  .project-container .project-card1 .project-container-head {
-    margin: 0 1em;
-  }
+  .project-container .project-card1 .project-container-head {margin: 0 1em;}
 
   .project-container .project-card1 .project-container-head h3{font-size: 16px}
 }
 
+/* for less then 415px screen */
 @media only screen and (max-width: 415px){
   .project-container .project-card1 p{font-size: 12px;}
 
   .project-container .project-card1 .project-container-head h3{font-size: 14px}
 }
 
+/* for less then 370px screen */
 @media only screen and (max-width: 370px){
   .project-heading h1{font-size: 28px;}
   
   .project-container .project-card1 p{font-size: 11px;}
 }
 
+/* for less then 320px screen */
 @media only screen and (max-width: 320px){
   .project-heading h1{font-size: 26px;}
 
