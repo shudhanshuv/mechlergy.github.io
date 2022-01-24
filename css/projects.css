@@ -60,7 +60,8 @@ body{
   border-bottom-left-radius: 20px;
 }
 
-.project-container .project-card1::before{
+.video-container .video {
+  object-fit: fill; 
   content: '';
   position: absolute;
   height: 100%;
@@ -69,10 +70,6 @@ body{
   left: 0;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-image: url(../assets/Projects/ELECTRIC-POWER-GENERATION-BY-SPEED-BREAKER.jpg);
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
   -webkit-filter: grayscale(0) blur(0);
   filter: grayscale(0) blur(0);
   transition: .1s ease-in-out;
@@ -82,35 +79,28 @@ body{
   -o-transition: .1s ease-in-out;
 }
 
-.project-container .project-card1:nth-child(2):before{
-  background-image: url(../assets/Projects/DOOR-HANDLE-SANITIZER.png);
-  background-repeat: repeat;
-  background-size: contain;
+.video-container:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(black, .2);
+  z-index: 1;
 }
 
-.project-container .project-card1:nth-child(3):before{
-  background-image: url(../assets/Projects/ELECTRIC-POWER-GENERATION-BY-TUNNEL.jpg)
-}
-
-.project-container .project-card1:nth-child(4):before{
-  background-image: url(../assets/Projects/DOF-CONVENTIONAL-LOW-COST-FIXTURE-FOR-ADDITIVE-MANUFACTURING-PROCESSES.jpg); 
-}
-
-.project-container .project-card1:nth-child(5):before{
-  background-image: url(../assets/Projects/BIO-MATERIAL-FOR-IMPLANTS.jpg);
-  background-size: contain;
-  background-repeat: repeat; 
-}
-
-.project-container .project-card1:hover::before{
-  -webkit-filter: grayscale(1) blur(2px);
-  filter: grayscale(1) blur(2px);
+.project-container .video-container:hover .video{
+  -webkit-filter: grayscale(1) blur(4px);
+  filter: grayscale(1) blur(4px);
   transition-delay: .2s;
 }
 
-.project-container .project-card1 p{
+.project-container .project-card1 .video-container .callout p{
     height: 100%;
     width: 100%;
+    top: 0;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -132,7 +122,7 @@ body{
     -o-transition: 0.3s ease-in-out;
 }
 
-.project-container .project-card1:hover p{
+.project-container .project-card1:hover .video-container .callout p{
   margin-top: 2px;
   visibility: visible;
   opacity: 1;
@@ -140,19 +130,19 @@ body{
 }
 
 .project-container .project-card1 .project-container-head {
-  width: auto;
   height: auto;
   position: relative;
   background-color: #eeeeee;
   padding: 1.5em 0;
   margin: 0 3em;
-  text-align: center;
   top: -15%;
   border-radius:15px ;
   z-index: 1;
 }
 
 .project-container .project-card1 .project-container-head h3{
+  text-align: center;
+  width: 100%;
   font-size: 30px;
   color: var(--secondary-color);
   font-family: 'Bebas Neue', cursive;
@@ -167,26 +157,27 @@ body{
 
   .project-container .project-card1 {height: 540px;}
 
-  .project-container .project-card1::before{
-    -webkit-filter: grayscale(1) blur(1px);
-    filter: grayscale(1) blur(1px);
+  .video-container .video{
+    -webkit-filter: grayscale(1) blur(2px);
+    filter: grayscale(1) blur(2px);
     transition-delay: .2s;
-  }
+}
 
-  .project-container .project-card1:hover::before{
+  .project-container .video-container:hover .video{
     -webkit-filter: grayscale(1) blur(1px);
     filter: grayscale(1) blur(1px);
   }
 
-  .project-container .project-card1 p{
+  .project-container .project-card1 .video-container .callout p{
     font-size: 19px;
     letter-spacing: 2px;
     opacity: 1;
     visibility: visible;
     transition-delay: .2s;
+    margin-top: 1em;
   }
 
-  .project-container .project-card1:hover p{margin-top: 0;}
+  .project-container .project-card1:hover .video-container .callout p{margin-top: 1em;}
 }
 
 /* for less then 1120px screen */
@@ -197,17 +188,17 @@ body{
 
   .project-container .project-card1 {
     height: 620px;
-    margin: 6em 2em;
+    margin: 6em 0;
   }
 
-  .project-container .project-card1 p{
+  .project-container .project-card1 .video-container .callout p{
       font-size: 21px;
       letter-spacing: 1px;
       padding: 0 2em;
       margin-top: 0.5em;
   }
 
-  .project-container .project-card1:hover p{margin-top: 0.5em;}
+  .project-container .project-card1:hover .video-container .callout p{margin-top: 0.5em;}
 
   .project-container .project-card1 .project-container-head {
     margin: 0 2em;
@@ -224,11 +215,12 @@ body{
 /* for less then 995px screen */
 @media screen and (max-width: 995px){
   .project-container .project-card1 {
+    width: 100%;
     height: 600px;
     margin: 6em 0;
   }
 
-  .project-container .project-card1 p{
+  .project-container .project-card1 .video-container .callout p{
       font-size: 20px;
       letter-spacing: 1.5px;
       line-height: 1.6;
@@ -236,7 +228,7 @@ body{
       margin-top: 1.5em;
   }
 
-  .project-container .project-card1:hover p{margin-top: 1.5em;}
+  .project-container .project-card1:hover .video-container .callout p{margin-top: 1.5em;}
 
   .project-container .project-card1 .project-container-head {top: -9%;}
 }
@@ -252,13 +244,13 @@ body{
     height: 580px;
   }
   
-  .project-container .project-card1 p{
+  .project-container .project-card1 .video-container .callout p{
     font-size: 19px;
     letter-spacing: 1.5px;
     margin-top: 1em;
   }
   
-  .project-container .project-card1:hover p{margin-top: 1em;}
+  .project-container .project-card1:hover .video-container .callout p{margin-top: 1em;}
   
   .project-container .project-card1 .project-container-head {
     padding: 1em;
@@ -272,10 +264,10 @@ body{
 @media screen and (max-width: 775px){
   .project-container .project-card1 {
     height: 600px;
-    margin: 4em 0.5em;
+    margin: 4em 0em;
   }
 
-  .project-container .project-card1 p{
+  .project-container .project-card1 .video-container .callout p{
       font-size: 17px;
       letter-spacing: 1px;
   }
@@ -288,8 +280,8 @@ body{
 /* for less then 575px screen */
 @media screen and (max-width: 575px){
   .project-container .project-card1 {
-    height: 620px;
-    margin: 4em 2em;
+    height: 580px;
+    margin: 4em 0;
   }
 
   .project-container .project-card1 .project-container-head {top: -6%;}
@@ -301,7 +293,7 @@ body{
 @media screen and (max-width: 550px){
   .project-container .project-card1 {
     height: 600px;
-    margin: 4em 0.5em;
+    margin: 4em 0em;
   }
 
   .project-heading h1{font-size: 38px;}
@@ -319,7 +311,7 @@ body{
 
   .project-container .project-card1 {height: 500px;}
 
-  .project-container .project-card1 p{font-size: 15px;}
+  .project-container .project-card1 .video-container .callout p{font-size: 15px;}
 
   .project-container .project-card1 .project-container-head {top: -8%;}
 
@@ -332,7 +324,7 @@ body{
   
   .project-container .project-card1 {height: 500px;}
 
-  .project-container .project-card1 p{font-size: 13px;}
+  .project-container .project-card1 .video-container .callout p{font-size: 13px;}
 
   .project-container .project-card1 .project-container-head {margin: 0 1em;}
 
@@ -341,7 +333,7 @@ body{
 
 /* for less then 415px screen */
 @media only screen and (max-width: 415px){
-  .project-container .project-card1 p{font-size: 12px;}
+  .project-container .project-card1 .video-container .callout p{font-size: 12px;}
 
   .project-container .project-card1 .project-container-head h3{font-size: 14px}
 }
@@ -350,7 +342,7 @@ body{
 @media only screen and (max-width: 370px){
   .project-heading h1{font-size: 28px;}
   
-  .project-container .project-card1 p{font-size: 11px;}
+  .project-container .project-card1 .video-container .callout p{font-size: 11px;}
 }
 
 /* for less then 320px screen */
@@ -361,7 +353,7 @@ body{
 
   .project-container .project-card1 {height: 500px;}
 
-  .project-container .project-card1 p{font-size: 10px;}
+  .project-container .project-card1 .video-container .callout p{font-size: 10px;}
 
   .project-container .project-card1 .project-container-head h3{font-size: 12px}
 }
