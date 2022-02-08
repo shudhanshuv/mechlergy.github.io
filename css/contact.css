@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Courgette&family=Dancing+Script&family=M+PLUS+Code+Latin:wght@100&family=Nova+Square&family=Pacifico&display=swap');
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+:root{
+    --primary-color:#FFF200;
+    --text-color:#f7f7f7;
+    --secondary-color:#26282B;
+    --content-text: font-family: 'Cairo', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+
+
+.contact-page{
+    position: relative;
+    height: 140vh;
+}
+
+.contact-heading{
+    width: auto;
+    text-align: left;
+    padding: 4em 0 4em 0;
+    z-index: 10;
+}
+
+.contact-heading h1{
+    font-size: 56px;
+    margin-bottom: 0.5em;
+    color: var(--secondary-color);
+}
+
+.contact-heading p{
+    width: 60%;
+}
+
+.contact-head{
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.contact-desc{
+    font-family: Larsseit, Helvetica, Arial, sans-serif;
+    color: #4f627a;
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.email-us , .call-us{
+    margin-bottom: 1.5em;
+}
+
+.email-us h3, .call-us h3, .social-container h3{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.email-us h3 lord-icon{
+    width:62px;
+    height:62px;
+    margin: 0 0.5em;
+}
+
+.call-us h3 lord-icon{
+    width:36px;
+    height:62px;
+    margin: 0 0.7em;
+}
+
+.social-container {
+    width: auto;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin-top: 1.5em;
+}
+    
+.social-icons li {
+    display: inline-block;
+    margin-right: 0.8em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.social-icons li a i {
+    color: var(--text-color);
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    transition: all 265ms ease-out;
+    -webkit-transition: all 265ms ease-out;
+    -moz-transition: all 265ms ease-out;
+    -ms-transition: all 265ms ease-out;
+    -o-transition: all 265ms ease-out;
+}
+
+.social-icons li a {
+    display: inline-block;
+}
+
+.social-icons li a:before {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #00B5F5, #26282B);
+    transition: all 265ms ease-out;
+    -webkit-transition: all 265ms ease-out;
+    -moz-transition: all 265ms ease-out;
+    -ms-transition: all 265ms ease-out;
+    -o-transition: all 265ms ease-out;
+}
+        
+.social-icons li a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+    -webkit-transition: all 265ms ease-in;
+    -moz-transition: all 265ms ease-in;
+    -ms-transition: all 265ms ease-in;
+    -o-transition: all 265ms ease-in;
+}
+        
+.social-icons li a:hover i {
+    color: #00B5F5;
+    background: -webkit-linear-gradient(45deg, #00B5F5, #26282B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+    -webkit-transition: all 265ms ease-in;
+    -moz-transition: all 265ms ease-in;
+    -ms-transition: all 265ms ease-in;
+    -o-transition: all 265ms ease-in;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+
+.separator {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+ 
+.map{
+    background-color: #21579c;
+    padding: 4em 0 8em 0;
+    position: relative;
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container-head{
+    width: 40%;
+}
+
+.map-container-head h3{
+    color: var(--text-color);
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+.map-container-head p{
+    color: var(--primary-color);
+    text-align: left;
+    box-sizing: border-box;
+    padding: 1em 2em 1em 0;
+    font-size: 18px;
+}
+
+.responsive-map{
+    position:relative;
+    width: 60%;
+    height: 400px;
+}
+
+.responsive-map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 16px 16px 22px var(--secondary-color);
+}
+
+/* for less then 1120px screen */
+@media screen and (max-width: 1120px) {
+    .contact-page{height:75vh;
+        padding-left: 4em;}
+
+    .contact-heading{ padding: 6em 0 8em 0;}
+
+    .contact-heading h1{font-size: 58px;}
+    
+    .contact-heading p{width: 80%;}
+    
+    .contact-desc{font-size: 24px;}
+    
+    .email-us , .call-us{margin-bottom: 2em;}
+    
+    .email-us h3, .call-us h3, .social-container h3{font-size: 36px;}
+    
+    .email-us h3 lord-icon{
+        width:66px;
+        height:66px;
+    }
+    
+    .call-us h3 lord-icon{
+        width:40px;
+        height:66px;
+    }
+        
+    .social-icons li {margin-right: 2em;}
+    
+    .social-icons li a i {
+        color: #00B5F5;
+        background: -webkit-linear-gradient(45deg, #00B5F5, #26282B);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(2.5);
+        -webkit-transform: scale(2.5);
+        -moz-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+        -o-transform: scale(2.5);
+    }
+
+    .social-icons li a:before {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+            
+    .social-icons li a:hover i {
+        transform: scale(2.5);
+        -webkit-transform: scale(2.5);
+        -moz-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+        -o-transform: scale(2.5);
+    }
+    
+    .separator {bottom: -0.13em;}
+    
+    .map{padding: 4em 8em 8em 8em;}
+
+    .map-container{flex-direction: column; }
+    
+    .map-container-head{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4em;
+    }
+    
+    .map-container-head h3{font-size: 48px;}
+    
+    .map-container-head p{
+        text-align: center;
+        padding: 1em 4em;
+        font-size: 20px;
+    }
+    
+    .responsive-map{width: 100%;}
+}
+  
+/* for less then 995px screen */
+@media screen and (max-width: 995px){
+    .contact-page{
+        height: 85vh;
+        padding-left: 0;
+    }
+
+    .contact-heading h1{font-size: 48px;}
+
+    .contact-heading p{width: 90%;}
+}
+
+/* for less then 825px screen */
+@media screen and (max-width: 825px){
+    .contact-page{height: 90vh;}
+
+    .map-container-head p{padding: 1em 2em;}
+}
+  
+/* for less then 780px screen */
+@media screen and (max-width: 780px){
+    .contact-page{height: 100vh;}
+}
+  
+/* for less then 765px screen */
+@media screen and (max-width: 765px){
+    .contact-heading h1{font-size: 38px;}
+    
+    .contact-heading p{width: 100%;}
+    
+    .contact-desc{font-size: 22px;}
+    
+    .email-us h3, .call-us h3, .social-container h3{font-size: 32px;}
+    
+    .email-us h3 lord-icon{
+        width:60px;
+        height:60px;
+    }
+    
+    .call-us h3 lord-icon{
+        width:36px;
+        height:60px;
+    }
+    
+    .map{padding: 4em 4em 8em 4em;}
+
+    .map-container-head p{padding: 1em 1.5em;}
+}
+
+/* for less then 620px screen */
+@media screen and (max-width: 620px){
+    .contact-page{height: 110vh;}
+}
+  
+/* for less then 555px screen */
+@media screen and (max-width: 575px){
+    .contact-page{height:130vh;
+        padding-left: 2em;
+    }
+
+    .contact-heading h1{font-size: 32px;}
+    
+    .contact-desc{font-size: 18px;}
+    
+    .email-us h3, .call-us h3, .social-container h3{font-size: 28px;}
+    
+    .email-us h3 lord-icon{
+        width:56px;
+        height:56px;
+    }
+    
+    .call-us h3 lord-icon{
+        width:32px;
+        height:56px;
+    }
+
+    .social-icons li {margin-right: 1em;}
+    
+    .social-icons li a i {
+        transform: scale(2);
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+    }
+            
+    .social-icons li a:hover i {
+        transform: scale(2);
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+    }
+  
+    .map{padding: 4em 4em 8em 4em;}
+
+    .map-container-head h3{font-size: 38px;}
+    
+    .map-container-head p{font-size: 16px;}
+
+    .responsive-map{height: 300px;}
+}
+  
+  
+/* for less then 511px screen */
+@media screen and (max-width: 440px){
+    .contact-page{
+        height:90vh;
+        padding-left: 1em;
+    }
+
+    .contact-heading{
+        padding: 4em 0 4em 0;
+    }
+
+    .contact-heading h1{font-size: 24px;}
+    
+    .contact-desc{font-size: 14px;}
+    
+    .email-us h3, .call-us h3, .social-container h3{font-size: 20px;}
+    
+    .email-us h3 lord-icon{
+        width:50px;
+        height:50px;
+    }
+    
+    .call-us h3 lord-icon{
+        width:28px;
+        height:50px;
+    }
+
+    .social-icons li {margin-right: 0.5em;}
+    
+    .social-icons li a i {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+            
+    .social-icons li a:hover i {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+  
+    .map{padding: 2em 2em 6em 2em;}
+
+    .map-container-head h3{font-size: 28px;}
+    
+    .map-container-head p{font-size: 12px;}
+}
+  
+  
+  /* for less then 415px screen */
+  @media only screen and (max-width: 411px){
+    .contact-page{height:110vh;}
+  }
+  
+  /* for less then 375px screen */
+  @media only screen and (max-width: 375px){
+    .contact-page{height:120vh;}
+
+    .contact-heading h1{font-size: 22px;}
+    
+    .contact-desc{font-size: 12px;}
+    
+    .email-us h3, .call-us h3, .social-container h3{font-size: 18px;}
+    
+    .email-us h3 lord-icon{
+        width:44px;
+        height:44px;
+    }
+    
+    .call-us h3 lord-icon{
+        width:24px;
+        height:44px;
+    }
+
+    .map{padding: 2em 1em 6em 1em;}
+  }
+  
+  /* for less then 300px screen */
+  @media only screen and (max-width: 300px){
+    .contact-page{height:120vh;}
+
+    .contact-heading h1{font-size: 16px;}
+    
+    .contact-desc{font-size: 10px;}
+    
+    .email-us h3, .call-us h3, .social-container h3{font-size: 15px;}
+
+    .email-us h3 lord-icon{
+        width:40px;
+        height:40px;
+    }
+    
+    .call-us h3 lord-icon{
+        width:22px;
+        height:40px;
+    }
+
+    .social-icons li {margin-right: 0.1em;}
+
+    .social-icons li a i {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}   
+            
+    .social-icons li a:hover i {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    .map-container-head h3{font-size: 24px;}
+    
+    .map-container-head p{font-size: 10px;}
+  }

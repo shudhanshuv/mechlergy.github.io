@@ -54,12 +54,3 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-var figure = $(".video").hover( hoverVideo, hideVideo );
-
-function hoverVideo(e) {  
-    $('.video', this).get(1).play(); 
-}
-
-function hideVideo(e) {
-    $('.video', this).get(0).pause(); 
-}
