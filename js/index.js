@@ -54,3 +54,14 @@ for (i = 0; i < coll.length; i++) {
 
 
 
+const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/hit/mechlergy.com/visits')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}

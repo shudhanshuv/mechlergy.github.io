@@ -525,10 +525,38 @@ body{
 
 #footer-container{
     height: 5vh;
-    background-color: #657BAA;
+    background-color: #253C68;
     text-align: center;
     letter-spacing: 2px;
     color: var(--text-color);
+}
+
+/* visiter counter */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Courgette&family=Dancing+Script&family=M+PLUS+Code+Latin:wght@100&family=Nova+Square&family=Pacifico&display=swap');
+
+.counting {
+	background-color: #253C68;
+	color: #fff;
+	font-family: 'Cairo', sans-serif;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	margin: 0;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.counting h1 {
+	font-size: 80px;
+}
+
+.counting p {
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 4px;
+    font-size: 34px;
 }
 
 @media screen and (max-width: 1200px){
@@ -585,7 +613,7 @@ body{
         height: auto;
     }
 
-    #project-container #project-container-heading{margin-top: 6em;}
+    #project-container #project-container-heading{padding-top: 6em;}
 
     #project-container #project-container-heading h2{font-size: 4em;}
 
@@ -656,7 +684,7 @@ body{
 
     #about-container .right-container img{width: 550px;}
 
-    #project-container #project-container-heading{margin-top: 4em;}
+    #project-container #project-container-heading{padding-top: 4em;}
 
     #project-container #project-container-heading h2{font-size: 3em;}
 
@@ -707,7 +735,7 @@ body{
 
     #about-container .right-container img{width: 350px;}
 
-    #project-container #project-container-heading{margin-top: 3em;}
+    #project-container #project-container-heading{padding-top: 3em;}
 
     #project-container #project-container-heading h2{font-size: 2.5em;}
 
@@ -737,6 +765,10 @@ body{
 
     #footer-container{font-size: 0.85em;
     letter-spacing: 0;}
+
+    .counting h1 {font-size: 60px;}
+    
+    .counting p {font-size: 24px;}
 }
 
 @media screen and (max-width: 400px){
@@ -764,6 +796,10 @@ body{
     .info-des{font-size: 14px;}
 
     #footer-container{font-size: 0.75em;}
+
+    .counting h1 {font-size: 50px;}
+    
+    .counting p {font-size: 20px;}
 }
 
 @media screen and (max-width: 374px){
@@ -773,7 +809,7 @@ body{
 
     #about-container .right-container img{width: 300px;}
 
-    #project-container #project-container-heading{margin-top: 3em;}
+    #project-container #project-container-heading{padding-top: 3em;}
 
     #project-container #project-container-heading h2{font-size: 2em;}
 
@@ -800,7 +836,7 @@ body{
 
     #about-container .right-container img{width: 250px;}
 
-    #project-container #project-container-heading{margin-top: 2em;}
+    #project-container #project-container-heading{padding-top: 2em;}
 
     #project-container #project-container-heading h2{font-size: 1.5em;}
 
@@ -817,6 +853,11 @@ body{
     #info-container #container-third {width: 180px;}
 
     #footer-container{font-size: 0.55em;}
+
+    .counting h1 {font-size: 40px;}
+    
+    .counting p {font-size: 16px;}
+
 }
 
 /*
@@ -1554,3 +1595,5 @@ body{
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
 }
 }
+
+
