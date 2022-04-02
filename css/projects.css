@@ -143,12 +143,17 @@ body{
 .project-container .project-card1 .project-container-head h3{
   text-align: center;
   width: 100%;
-  font-size: 30px;
+  font-size: 28px;
   color: var(--secondary-color);
   font-family: 'Bebas Neue', cursive;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 2;
+}
+
+.patented{
+  font-size: 16px;
+  color: #ff9900;
 }
 
 /* for less then 1280px screen */
@@ -206,9 +211,13 @@ body{
   }
 
   .project-container .project-card1 .project-container-head h3{
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 1.5px;
     line-height: 1.5;
+  }
+
+  .patented{
+    font-size: 18px;
   }
 }
 
@@ -258,6 +267,7 @@ body{
   }
   
   .project-container .project-card1 .project-container-head h3{font-size: 27px}
+
 }
 
 /* for less then 775px screen */
@@ -287,6 +297,10 @@ body{
   .project-container .project-card1 .project-container-head {top: -6%;}
 
   .project-container .project-card1 .project-container-head h3{font-size: 20px}
+
+  .patented{
+    font-size: 16px;
+  }
 }
 
 /* for less then 550px screen */
@@ -301,6 +315,10 @@ body{
   .project-heading p{font-size: 15px;}
 
   .project-container .project-card1 .project-container-head h3{font-size: 17px}
+
+  .patented{
+    font-size: 14px;
+  }
 }
 
 /* for less then 511px screen */
@@ -329,6 +347,10 @@ body{
   .project-container .project-card1 .project-container-head {margin: 0 1em;}
 
   .project-container .project-card1 .project-container-head h3{font-size: 16px}
+
+  .patented{
+    font-size: 12px;
+  }
 }
 
 /* for less then 415px screen */
@@ -336,6 +358,10 @@ body{
   .project-container .project-card1 .video-container .callout p{font-size: 12px;}
 
   .project-container .project-card1 .project-container-head h3{font-size: 14px}
+
+  .patented{
+    font-size: 12px;
+  }
 }
 
 /* for less then 370px screen */
@@ -355,5 +381,9 @@ body{
 
   .project-container .project-card1 .video-container .callout p{font-size: 10px;}
 
-  .project-container .project-card1 .project-container-head h3{font-size: 12px}
+  .project-container .project-card1 .project-container-head h3{font-size: 11px}
+
+  .patented{
+    font-size: 10px;
+  }
 }
