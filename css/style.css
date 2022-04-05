@@ -45,7 +45,7 @@ body{
 }
 
 .logo-heading{
-    width: 30%;
+    width: 35%;
     height: auto;
     position: absolute;
     top: 14px;
@@ -191,6 +191,10 @@ body{
         font-size: 1.5em;
     }
 
+    .logo-heading .logo-subheading{
+        font-size: 11px;
+    }
+
     #navigation-bar{
         font-size: 45px;
         top: 2px;
@@ -229,6 +233,10 @@ body{
         font-size: 2.2em;
     }
 
+    .logo-heading .logo-subheading{
+        font-size: 16px;
+    }
+
     #navigation-bar{
         font-size: 60px;
         top: 0.3em;
@@ -259,6 +267,10 @@ body{
         font-size: 1.5em;
     }
 
+    .logo-heading .logo-subheading{
+        font-size: 11px;
+    }
+
     #navigation-bar{
         top: 0;
         right: 0.2em;
@@ -283,6 +295,10 @@ body{
         top: 24px;
         left: 70px;
         font-size: 15px;
+    }
+
+    .logo-heading .logo-subheading{
+        font-size: 6px;
     }
 
     #navigation-bar{
@@ -315,6 +331,10 @@ body{
 /* for less then 400px screen */
 @media only screen and (max-width: 400px){
     .logo-heading{font-size: 12px;}
+
+    .logo-heading .logo-subheading{
+        font-size: 5px;
+    }
 
     #header-bottom p{font-size: 10px;}
 }
