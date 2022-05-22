@@ -333,7 +333,7 @@ body{
     } 
 
     .add-poster a img{
-        width: 250px;
+        width: 270px;
         height: auto;
         padding: 1em;
     }
@@ -344,9 +344,18 @@ body{
     }
 }
 
+
 @media only screen and (max-width: 375px){
     .add-poster a img{
-        width: 210px;
+        width: 240px;
+        height: auto;
+        padding: 1em;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .add-poster a img{
+        width: 230px;
         height: auto;
         padding: 1em;
     }
@@ -370,7 +379,7 @@ body{
         padding:1em;
     } 
 
-    .add-poster a img{
+    .add-poster  img{
         width: 220px;
         height: auto;
         padding: 2em 1em;
