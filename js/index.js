@@ -65,3 +65,19 @@ function updateVisitCount() {
 		countEl.innerHTML = res.value;
 	})
 }
+
+
+
+
+
+
+$(document).ready(function () {
+  //select the POPUP FRAME and show it
+  $("#popup").hide().fadeIn(500);
+
+  //close the POPUP if the button with id="close" is clicked
+  $("#close").on("click", function (e) {
+      e.preventDefault();
+      $("#popup").fadeOut(500);
+  });
+});

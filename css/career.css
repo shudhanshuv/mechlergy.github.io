@@ -116,6 +116,78 @@ body{
     margin: 0.5em 0 0 0;
 }
 
+
+
+#popup {
+    width: 100%;
+    position:fixed;
+    text-align: right;
+    margin:0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px 2px #000;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    padding: 4em;
+    backdrop-filter: blur(4px);
+}
+
+.add-poster a img{
+    width: 450px;
+    height: auto;
+    padding: 2em;
+}
+
+.add-poster{
+    display: flex; 
+    justify-content: center;
+}
+
+.panel-footer button{
+    background: transparent;
+    border: none;
+
+}
+
+.panel-footer button lord-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: pulse 1500ms infinite;
+    -webkit-animation: pulse 1500ms infinite;
+}
+
+.panel-footer button lord-icon:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition:500ms ease-in-out;
+    -webkit-transition:500ms ease-in-out;
+    -moz-transition:500ms ease-in-out;
+    -ms-transition:500ms ease-in-out;
+    -o-transition:500ms ease-in-out;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: var(--primary-color) 0 0 0 0;
+    }
+
+    75%{
+        box-shadow: #ff69b400 0 0 0 16px;
+    }
+}
+
+
 /* for less then 1200px screen */
 @media screen and (max-width: 1200px) {
     .career-container .career-container-header{
@@ -146,6 +218,32 @@ body{
     .career-container-apply h1{font-size: 50px;}
     
     .career-container-apply p{font-size: 28px;}
+    
+    #popup {
+        width: 100%;
+       height: 100%;
+    }
+
+    .add-poster{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .add-poster a img{
+        width: 500px;
+        height: auto;
+    }
+    
+    .panel-footer button lord-icon:hover{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    
 }
 
 /* for less then 992px screen */
@@ -159,6 +257,24 @@ body{
     .apply-btn{font-size: 26px;}
     
     .career-container-apply h1{font-size: 48px;}
+
+    #popup {
+        padding:2em 4em;
+    }   
+}
+
+@media screen and (max-width: 850px){
+    .add-poster a img{
+        width: 420px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .add-poster a img{
+        width: 380px;
+        height: auto;
+    }
 }
 
 /* for less then 600px screen */
@@ -179,10 +295,27 @@ body{
     .career-container-apply h1{font-size: 36px;}
     
     .career-container-apply p{font-size: 20px;}
+
+    #popup {
+        padding:2em 2em;
+    } 
+
+    .add-poster a img{
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .add-poster img{
+        width: 260px;
+        height: auto;
+        padding: 1em;
+    }
 }
 
 /* for less then 400px screen */
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 415px){
     .career-container-heading{font-size: 44px;}
     
     .career-container-sub-heading{font-size: 20px;}
@@ -194,7 +327,40 @@ body{
     .career-container-apply h1{font-size: 32px;}
     
     .career-container-apply p{font-size: 18px;}
+
+    #popup {
+        padding:1.5em;
+    } 
+
+    .add-poster a img{
+        width: 270px;
+        height: auto;
+        padding: 1em;
+    }
+
+    .panel-footer button lord-icon{
+        width: 40px;
+        height: 40px;
+    }
 }
+
+
+@media only screen and (max-width: 375px){
+    .add-poster a img{
+        width: 240px;
+        height: auto;
+        padding: 1em;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .add-poster a img{
+        width: 230px;
+        height: auto;
+        padding: 1em;
+    }
+}
+
 
 @media only screen and (max-width: 300px){
     .career-container-heading{font-size: 36px;}
@@ -208,4 +374,20 @@ body{
     .career-container-apply h1{font-size: 26px;}
     
     .career-container-apply p{font-size: 14px;}
+
+    #popup {
+        padding:1em;
+    } 
+
+    .add-poster a img{
+        width: 220px;
+        height: auto;
+        padding: 2em 1em;
+    }
 } 
+
+
+
+
+
+
