@@ -226,6 +226,7 @@ body{
         top:30%;
         left: 20%;
         font-size: 3.2em;
+        line-height: 1.8;
     }
 
     #header-bottom{
@@ -279,58 +280,104 @@ body{
 
 /* for less then 992px screen */
 @media screen and (max-width: 992px) {
-    .logo-container img{width: 80px;}
+    .logo-container img{width: 100px;
+        top: 15px;
+    }
 
     .logo-heading{
-        top: 20px;
-        left: 120px;
-        font-size: 1.5em;
+        top: 35px;
+        left: 140px;
+        font-size: 2em;
     }
 
-    .logo-heading .logo-subheading{
-        font-size: 10px;
-    }
+    .logo-heading .logo-subheading{font-size: 14px;}
 
-    #navigation-bar{
-        top: 0;
-        right: 0.2em;
-    }
+    #navigation-bar{top: 15px;}
 
     .startup-heading{
-        top:7.5em;
-        font-size: 22px;
+        top:8.5em;
+        font-size: 24px;
     }
 
-    .slogon-text{font-size: 2.5em;}
+    .slogon-text{font-size: 3.5em;}
 
-    #header-bottom img{width: 200px;}
+    #header-bottom img{width: 200px;
+    padding: 0;}
 
     #header-bottom p{font-size: 20px;}
 }
 
+/* for less then 825px screen */
+@media screen and (max-width: 825px){
+    .logo-container img{width: 80px;}
 
-/* for less then 600px screen */
-@media only screen and (max-width: 600px){
+    .logo-heading{
+        left: 120px;
+        font-size: 1.8em;
+    }
+
+    .logo-heading .logo-subheading{font-size: 12px;}
+
+    .startup-heading{
+        top:8.5em;
+        font-size: 22px;
+    }
+
+    .slogon-text{font-size: 3.2em;}
+
+}
+
+/* for less then 765px screen */
+@media screen and (max-width: 775px){
+    .logo-container img{width: 70px;
+    top: 12px;}
+
+    .logo-heading{
+        left: 110px;
+        top: 28px;
+        font-size: 1.5em;
+    }
+
+    .logo-heading .logo-subheading{font-size: 10px;}
+
+    #navigation-bar{font-size: 50px;
+        top: 12px;
+        right: 8px;}
+
+    .startup-heading{
+        top:8.5em;
+        font-size: 18px;
+    }
+
+    .slogon-text{font-size: 2.8em;}
+
+    #header-bottom img{width: 140px;}
+
+    #header-bottom p{font-size: 14px;}
+}
+
+
+/* for less then 650px screen */
+@media only screen and (max-width: 650px){
     .logo-container img{
-        width: 50px;
-        left: 16px;
+        width: 65px;
         top: 10px;
     }
 
     .logo-heading{
-        top: 24px;
-        left: 70px;
-        font-size: 15px;
+        top: 26px;
+        left: 100px;
+        font-size: 20px;
     }
 
     .logo-heading .logo-subheading{
-        font-size: 5px;
+        font-size: 8px;
     }
 
     #navigation-bar{
         font-size: 40px;
-        top: 6px;
-        right: 0;
+        top: 14px;
+        right: 8px;
     }
 
     .startup-heading{
@@ -340,7 +387,6 @@ body{
     }
 
     .slogon-text{
-        top:30%;
         font-size: 2em;
     }
 
@@ -360,50 +406,123 @@ body{
     }
 }
 
-/* for less then 400px screen */
-@media only screen and (max-width: 400px){
-    .logo-heading{font-size: 12px;}
-
-    .logo-heading .logo-subheading{
-        font-size: 4px;
+/* for less then 555px screen */
+@media screen and (max-width: 525px){
+    .logo-container img{
+        width: 60px;
+        top: 16px;
+        left: 20px;
     }
 
-    .startup-heading{
-        top:7em;
+    .logo-heading{
+        top: 30px;
+        left: 90px;
         font-size: 16px;
     }
+
+    .logo-heading .logo-subheading{
+        font-size: 6px;
+    }
+
+    #navigation-bar{top: 16px;}
+
+    .startup-heading{
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .slogon-text{font-size: 1.8em;}
+
+    #header-bottom img{width: 180px;}
+}
+
+/* for less then 450px screen */
+@media only screen and (max-width: 450px){
+    .logo-container img{                 
+        width: 52px;
+        left: 12px;
+        top: 10px;
+    }
+
+    .logo-heading{
+        top: 30px;
+        left: 70px;
+        font-size: 13px;
+    }
+
+    .logo-heading .logo-subheading{
+        font-size: 5px;
+    }
+
+    #navigation-bar{
+        top: 10px;
+        right: 0;
+    }
+
+    .startup-heading{font-size: 16px;}
+
+    #header-bottom p{font-size: 12px;}
+}
+
+/* for less then 390px screen */
+@media only screen and (max-width: 390px){
+    .logo-container img{
+        width: 45px;
+        top: 7px;
+    }
+
+    .logo-heading{
+        top: 24px;
+        left: 60px;
+        font-size: 13px;
+    }
+
+    .logo-heading .logo-subheading{
+        font-size: 5px;
+    }
+
+    #navigation-bar{
+        font-size: 32px;
+        top: 12px;
+    }
+
+    .startup-heading{font-size: 15px;}
+
+    .slogon-text{font-size: 1.3em;}
+
+    #header-bottom img{width: 130px;}
 
     #header-bottom p{font-size: 10px;}
 }
 
-@media only screen and (max-width: 374px){
+/* for less then 345px screen */
+@media only screen and (max-width: 345px){
     .logo-container img{
         width: 40px;
         top: 4px;
     }
 
     .logo-heading{
-        top: 16px;
-        left: 60px;
-        font-size: 12px;
+        top: 20px;
+        left: 55px;
+        font-size: 11px;
     }
+
+    .logo-heading .logo-subheading{font-size: 3px;}
 
     #navigation-bar{
-        font-size: 30px;
-        top: 4px;
+        font-size: 28px;
+        top: 8px;
     }
 
-    .startup-heading{
-       
-        top:6.8em;
-        font-size: 14px;
-    }
+    .startup-heading{font-size: 14px;}
 
-    .slogon-text{font-size: 1.5em;}
+    .slogon-text{font-size: 1.2em;}
 
-    #header-bottom img{width: 150px;}
 
-    #header-bottom p{font-size: 10px;}
+    #header-bottom img{width: 120px;}
+
+    #header-bottom p{font-size: 8px;}
 }
 
 @media only screen and (max-width: 300px){
@@ -546,7 +665,7 @@ News feed
     line-height: 40px;
 }
 
-.highlight-info{color: var(--primary-color);}
+.highlight-info{color: #144195;}
 
 #about-container{
     width: auto;
@@ -555,7 +674,7 @@ News feed
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    background-color: var(--primary-color);
+    background-color: #253C68;
 }
 
 #about-container .left-container{
@@ -566,7 +685,7 @@ News feed
 #about-container .left-container h4{
     padding: 0 5em;
     letter-spacing: 4px;
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-weight: 600;
 }
 
