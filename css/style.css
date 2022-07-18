@@ -815,28 +815,32 @@ News feed
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Courgette&family=Dancing+Script&family=M+PLUS+Code+Latin:wght@100&family=Nova+Square&family=Pacifico&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
 .counting {
 	background-color: #253C68;
-	color: #fff;
-	font-family: 'Cairo', sans-serif;
-	flex-direction: column;
+	color: var(--secondary-color);
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
 	height: auto;
 	margin: 0;
-    padding: 4em 0;
+    padding: 1.5em 0;
     text-align: center;
 }
 
 .counting h1 {
-	font-size: 80px;
+    font-family: 'Caveat', cursive;
+	font-size: 58px;
+    padding: 0 0.2em;
+    color: var(--primary-color);
 }
 
 .counting p {
 	color: rgba(255, 255, 255, 0.8);
 	letter-spacing: 4px;
-    font-size: 34px;
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
 }
 
 @media screen and (max-width: 1200px){
@@ -1099,9 +1103,16 @@ News feed
     #footer-container{font-size: 0.85em;
     letter-spacing: 0;}
 
-    .counting h1 {font-size: 60px;}
+    .counting {
+        padding: 1em 0;
+    }
     
-    .counting p {font-size: 24px;}
+    .counting h1 {
+        font-size: 54px;
+        padding: 0 0.2em;
+    }
+    
+    .counting p {font-size: 18px;}
 
     #ticker{height:40px;}
 
@@ -1141,7 +1152,7 @@ News feed
     }
 }
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 435px){
     #second-container h3{font-size: 16px;}
 
     #about-container .left-container h4{font-size: 22px;
@@ -1167,9 +1178,12 @@ News feed
 
     #footer-container{font-size: 0.75em;}
 
-    .counting h1 {font-size: 50px;}
+    .counting {padding: 1em 0;}
     
-    .counting p {font-size: 20px;}
+    .counting h1 {font-size: 44px;}
+    
+    .counting p {font-size: 14px;
+    letter-spacing: 2px;}
 
     #ticker{height:35px;}
 
@@ -1204,7 +1218,7 @@ News feed
     }
 }
 
-@media screen and (max-width: 374px){
+@media screen and (max-width: 375px){
     #second-container #second-logo{width: 100px;}
 
     #second-container h3{font-size: 14px;}
@@ -1226,6 +1240,12 @@ News feed
     .info-des{font-size: 12px;}
 
     #footer-container{font-size: 0.65em;}
+
+    .counting {padding: 0.8em 0;}
+    
+    .counting h1 {font-size: 40px;}
+    
+    .counting p {font-size: 12px;}
 
     #ticker{height:30px;}
 
@@ -1288,9 +1308,11 @@ News feed
 
     #footer-container{font-size: 0.55em;}
 
-    .counting h1 {font-size: 40px;}
+    .counting {padding: 0.5em 0;}
     
-    .counting p {font-size: 16px;}
+    .counting h1 {font-size: 34px;}
+    
+    .counting p {font-size: 8px;}
 
     #ticker{height:25px;}
 
@@ -1481,10 +1503,10 @@ News feed
     }
 }
 
-/*
+/* 
     under-construction-page
 */
-.page-heading{
+/* .page-heading{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -1534,10 +1556,10 @@ News feed
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-}
+} */
 
 /* for less then 1200px screen */
-@media screen and (max-width: 1200px){
+/* @media screen and (max-width: 1200px){
     .page-heading img{
         width: 800px;
         margin-bottom: 4em;
@@ -1551,10 +1573,10 @@ News feed
         font-size: 40px;
         margin-top: 2em;
     }
-}
+} */
 
 /* for less then 992px screen */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .page-heading img{
         width: 600px;
         margin: 16em 0 2em 0;
@@ -1579,10 +1601,10 @@ News feed
         padding: 0.3em 0;
         margin-bottom: 1em;
     }
-}
+} */
 
 /* for less then 600px screen */
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
     .page-heading img{
         width: 400px;
         margin: 8em 0 2em 0;
@@ -1600,15 +1622,15 @@ News feed
         width: 150px;
         margin-bottom: 0.5em;
     }
-}
+} */
 
 /* for less then 400px screen */
-@media screen and (max-width: 400px){
+/* @media screen and (max-width: 400px){
     #clock{font-size: 22px;}
-}
+} */
 
 /* for less then 374px screen */
-@media screen and (max-width: 374px){
+/* @media screen and (max-width: 374px){
     .page-heading img{
         width: 350px;
         margin: 12em 0 2em 0;
@@ -1621,7 +1643,7 @@ News feed
     #clock{font-size: 18px;}
 
     .countdown{width: 120px;}
-}
+} */
 
 /* Members-page */
 
