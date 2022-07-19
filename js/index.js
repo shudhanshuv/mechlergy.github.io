@@ -52,7 +52,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
+// visit counter
 
 const countEl = document.getElementById('count');
 
@@ -70,7 +70,6 @@ function updateVisitCount() {
 
 
 
-
 $(document).ready(function () {
   //select the POPUP FRAME and show it
   $("#popup").hide().fadeIn(500);
@@ -81,3 +80,8 @@ $(document).ready(function () {
       $("#popup").fadeOut(500);
   });
 });
+
+
+
+
+
