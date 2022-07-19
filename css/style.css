@@ -791,6 +791,8 @@ News feed
     letter-spacing: 4px;
 }
 
+.footer-highlight-info{color: var(--primary-color);}
+
 #info-container #container-second{
     margin: 10em 0 0 4em;
     font-family: sans-serif;
