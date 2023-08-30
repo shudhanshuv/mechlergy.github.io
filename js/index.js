@@ -54,17 +54,23 @@ for (i = 0; i < coll.length; i++) {
 
 // visit counter
 
-const countEl = document.getElementById('count');
 
-updateVisitCount();
 
-function updateVisitCount() {
-	fetch('https://api.countapi.xyz/hit/mechlergy.com/visits')
-	.then(res => res.json())
-	.then(res => {
-		countEl.innerHTML = res.value;
-	})
+var counterContainer = document.querySelector("#count");
+
+var visitCount = localStorage.getItem("page_view");
+
+// Check if page_view entry is present
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
 }
+counterContainer.innerHTML = visitCount;
+
+
 
 
 

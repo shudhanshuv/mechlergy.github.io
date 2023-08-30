@@ -37,7 +37,7 @@ body{
 }
 
 .logo-container img{
-    width: 60px;
+    width: 48px;
     height: auto;
     position: absolute;
     top: 4px;
@@ -49,8 +49,8 @@ body{
     height: auto;
     position: absolute;
     top: 14px;
-    left: 100px;
-    font-size: 1.5em;
+    left: 90px;
+    font-size: 1.2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--primary-color);
     letter-spacing: 1px;
@@ -83,7 +83,7 @@ body{
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 32px;
     color: var(--text-color);
     display: block;
     transition: 0.3s;
@@ -95,9 +95,9 @@ body{
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 0px;
+    right: 60px;
+    font-size: 50px;
 }
 
 @media screen and (max-width: 1200px){
@@ -142,10 +142,11 @@ body{
     width: 100%;
     position: absolute;
     text-align: center;
-    top:6em;
-    font-size: 18px;
+    top:7em;
+    font-size: 14px;
+    letter-spacing: 1.5px;
     color: var(--text-color);
-    font-family: 'Nova Square', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
