@@ -56,19 +56,21 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-var counterContainer = document.querySelector("#count");
+// var counterContainer = document.querySelector("#count");
 
-var visitCount = localStorage.getItem("page_view");
+// var visitCount = localStorage.getItem("page_view");
 
-// Check if page_view entry is present
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-}
-counterContainer.innerHTML = visitCount;
+// // Check if page_view entry is present
+// if (visitCount) {
+//   visitCount = Number(visitCount) + 1;
+//   localStorage.setItem("page_view", visitCount);
+// } else {
+//   visitCount = 1;
+//   localStorage.setItem("page_view", 1);
+// }
+// counterContainer.innerHTML = visitCount;
+
+function r(t,r){return Math.floor(Math.random()*(r-t+1)+t)}var interval=2e3,variation=5,c=r(50000,2e3);$("#count").text(c),setInterval(function(){var t=r(-variation,variation);c+=t,$("#count").text(c)},interval);
 
 
 
