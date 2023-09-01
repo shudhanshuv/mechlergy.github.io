@@ -54,8 +54,6 @@ for (i = 0; i < coll.length; i++) {
 
 // visit counter
 
-
-
 // var counterContainer = document.querySelector("#count");
 
 // var visitCount = localStorage.getItem("page_view");
@@ -70,7 +68,8 @@ for (i = 0; i < coll.length; i++) {
 // }
 // counterContainer.innerHTML = visitCount;
 
-function r(t,r){return Math.floor(Math.random()*(r-t+1)+t)}var interval=2e3,variation=5,c=r(50000,2e3);$("#count").text(c),setInterval(function(){var t=r(-variation,variation);c+=t,$("#count").text(c)},interval);
+//  Random number for visiter counter
+// function r(t,r){return Math.floor(Math.random()*(r-t+1)+t)}var interval=2e3,variation=2,c=r(50000,2e3);$("#count").text(c),setInterval(function(){var t=r(-variation,variation);c+=t,$("#count").text(c)},interval);
 
 
 
