@@ -37,7 +37,7 @@ body{
 }
 
 .logo-container img{
-    width: 48px;
+    width: 42px;
     height: auto;
     position: absolute;
     top: 4px;
@@ -49,8 +49,8 @@ body{
     height: auto;
     position: absolute;
     top: 14px;
-    left: 90px;
-    font-size: 1.2em;
+    left: 80px;
+    font-size: 1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--primary-color);
     letter-spacing: 1px;
@@ -132,7 +132,7 @@ body{
 
 #navigation-bar{
     position: absolute;
-    font-size: 40px;
+    font-size: 28px;
     top: 0.2em;
     right: 1em;
     color: var(--text-color);
@@ -142,7 +142,7 @@ body{
     width: 100%;
     position: absolute;
     text-align: center;
-    top:7em;
+    top:6em;
     font-size: 14px;
     letter-spacing: 1.5px;
     color: var(--text-color);
