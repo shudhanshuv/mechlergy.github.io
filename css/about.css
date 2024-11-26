@@ -297,6 +297,87 @@ body{
 }
 
 
+#section-3{
+    /* background: #1e1e2e; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  width: auto;
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.sectioon-3-head{
+    font-size: 32px;
+}
+
+.profile-card {
+    max-width: 50rem;
+    min-height: 10rem;
+    /* border: 2px solid var(--primary-color); */
+    display: flex;
+    padding: 4em;
+    margin: 4em 0;
+    background: #F2F2F2;
+    color: var(--background-color);
+    /*   padding: 0 1rem 1rem 1rem; */
+  }
+  
+  .profile-info {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-info  h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0.5em 0 0.2em 0;
+    letter-spacing: 2px;
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  .profile-info  p {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+     margin: 0;
+    color: var(--background-color);
+  }
+  
+  .profile-info  span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  /* .profile-links {
+    text-align: center;
+  }
+  
+  .profile-links > a {
+    color: #9be895;
+  } */
+  
+  .profile-picture {
+    margin: auto;
+    padding-inline-start: 1rem;
+  }
+  
+  .profile-picture > img {
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+  }
+  
+
+
 /* for less then 1200px screen */
 @media screen and (max-width: 1200px) {
     .card{
@@ -345,6 +426,26 @@ body{
     .info .member-role{font-size: 22px;}
 }
 
+@media screen and (max-width: 960px) {
+    .sectioon-3-head{
+        margin-top: 2em;
+        font-size: 28px;
+    }
+
+    .profile-card {
+        flex-direction: column-reverse;
+        margin-inline: 1rem;
+    }
+
+    .profile-info {
+        width: 100%;
+    }
+
+    .profile-info  h1 {
+        margin-top: 1em;
+      }
+}
+
 /* for less then 600px screen */
 @media only screen and (max-width: 600px){
     .card{
@@ -386,6 +487,7 @@ body{
     .info .member-qualification{font-size: 14px;}
     
     .info .member-role{font-size: 16px;}
+
 }
 
 /* for less then 400px screen */
@@ -404,6 +506,11 @@ body{
     .info .member-qualification{font-size: 12px;}
     
     .info .member-role{font-size: 14px;}
+
+    .profile-card {
+        padding: 1em;
+        margin: 2em 0;
+    }
 }
 
 @media only screen and (max-width: 300px){
@@ -441,4 +548,6 @@ body{
     .info .member-qualification{font-size: 10px;}
     
     .info .member-role{font-size: 12px;}
+
+    
 }

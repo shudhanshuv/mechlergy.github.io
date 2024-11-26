@@ -2,5 +2,6 @@
     "cSpell.ignoreWords": [
         "Larsseit",
         "deaccelerates"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
